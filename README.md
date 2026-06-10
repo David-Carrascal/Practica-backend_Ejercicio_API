@@ -38,3 +38,16 @@ Ejecutar servidor:
 ```bash
 uvicorn app.main:app --reload
 ```
+## Ejecución local
+
+Activar entorno virtual:
+
+```bash
+source .venv/Scripts/activate
+```
+
+Ejecutar servidor:
+
+```bash
+uvicorn app.main:app --reload
+```
