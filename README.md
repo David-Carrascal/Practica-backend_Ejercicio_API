@@ -24,3 +24,17 @@ Activar entorno virtual:
 
 ```bash
 .venv\Scripts\activate
+
+## Ejecución local
+
+Activar entorno virtual:
+
+```bash
+source .venv/Scripts/activate
+```
+
+Ejecutar servidor:
+
+```bash
+uvicorn app.main:app --reload
+```
