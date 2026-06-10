@@ -1,0 +1,116 @@
+# =============================================================
+# .gitignore · sena-dev-2026-backend (Python · FastAPI)
+# =============================================================
+ 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+ 
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+ 
+# Virtualenvs
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+ 
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+ 
+# Variables de entorno (NUNCA commitear)
+.env
+.env.local
+.env.*.local
+ 
+# Alembic — pero SÍ commitear las migraciones
+# (las migraciones viven en alembic/versions/)
+# alembic.ini se commitea, .env de Alembic NO
+ 
+# Postgres data dir local (Docker volume)
+postgres-data/
+.pgdata/
+ 
+# Logs
+*.log
+logs/
+ 
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.spyderproject
+.spyproject
+.ropeproject
+ 
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+ 
+# Ruff cache
+.ruff_cache/
+ 
+# Drafts personales
+*-draft.*
+drafts/
+.drafts/
+ 
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+ 
+# Archivos temporales
+*.tmp
+*.bak
+ 
+# uv lockfile (sí commitear, solo el cache no)
+.uv-cache/
+ 
+# Archivos de Excel temporales subidos por usuario en dev
+uploads/
+tmp_excel/
+ 
+# Data extraction pipeline - source Excels (PII volumétrico, ver data/raw/README.md)
+data/raw/*.xlsx
+data/raw/*.xlsm
